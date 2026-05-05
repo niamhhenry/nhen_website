@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Research fellow in data engineering for peace and conflict data projects. Portfolio of tools, datasets, and publications."
+    />
+    <title>Niamh Henry | Data Engineering for PeaceTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top">Niamh Henry</a>
+      <nav aria-label="Main navigation">
+        <a href="#featured">Featured</a>
+        <a href="#collaborations">Collaborations</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#publications">Publications</a>
+        <!-- <a href="#talks">Talks</a> -->
+        <a href="#recognition">Recognition</a>
+        <a href="#education">Background</a>
+        <a href="#wip">Work in Progress</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        aria-pressed="false"
+      >
+        Dark
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <div class="hero-copy">
+          <p class="kicker">Research Fellow in Data Engineering &middot; PeaceRep &middot; University of Edinburgh</p>
+          <h1>
+            I build data infrastructure and analytical tools for peace process research.
+          </h1>
+          <p class="lede">
+            Co-creator of the PA-X Tracker and the Peace Agreement Actors Dataset.
+            My work connects data engineering, NLP, and visualization to help researchers
+            and practitioners understand peace and transition processes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#featured">View Portfolio</a>
+            <a class="btn" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="assets/headshot_ISA.jpg" alt="Headshot of Niamh Henry" />
+        </div>
+      </section>
+
+      <section id="featured" class="section reveal">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <p>Core tools and data outputs.</p>
+        </div>
+        <div id="featured-grid" class="card-grid"></div>
+      </section>
+
+      <section id="collaborations" class="section reveal">
+        <div class="section-head">
+          <h2>Collaborative Tools</h2>
+          <p>Visualizations and interfaces developed with colleagues.</p>
+        </div>
+        <div id="collab-grid" class="card-grid"></div>
+      </section>
+
+      <section id="datasets" class="section reveal">
+        <div class="section-head">
+          <h2>Datasets Developed</h2>
+          <p>Structured resources designed for reuse by researchers and practitioners.</p>
+        </div>
+        <div id="datasets-grid" class="card-grid"></div>
+      </section>
+
+      <section id="publications" class="section reveal">
+        <div class="section-head">
+          <h2>Publications</h2>
+          <p>Selected outputs from research and collaborative delivery.</p>
+        </div>
+        <div id="publications-grid" class="card-grid compact"></div>
+      </section>
+
+      <!--
+      <section id="talks" class="section reveal">
+        <div class="section-head">
+          <h2>Talks &amp; Appearances</h2>
+          <p>Presentations, panels, and showcases.</p>
+        </div>
+        <div id="talks-grid" class="card-grid"></div>
+      </section>
+      -->
+
+      <section id="recognition" class="section reveal">
+        <div class="section-head">
+          <h2>Recognition</h2>
+          <p>Team and collaborative achievements.</p>
+        </div>
+        <div id="recognition-grid" class="card-grid"></div>
+      </section>
+
+      <section id="education" class="section reveal">
+        <div class="section-head">
+          <h2>Background</h2>
+          <p>Academic training and earlier research.</p>
+        </div>
+        <div id="education-grid" class="card-grid"></div>
+      </section>
+
+      <section id="wip" class="section reveal">
+        <div class="section-head">
+          <h2>Work in Progress</h2>
+          <p>Prototypes and experiments currently in active development.</p>
+        </div>
+        <div id="wip-grid" class="card-grid"></div>
+      </section>
+
+      <section id="contact" class="section contact reveal">
+        <h2>Contact</h2>
+        <p>
+          Open to collaboration on peace data, conflict analytics, and applied
+          computational methods.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:niamh.henry@ed.ac.uk">Email</a>
+          <a href="https://orcid.org/0009-0003-0046-5529" target="_blank" rel="noopener">ORCID</a>
+          <a href="https://scholar.google.com/citations?user=OtRtZSsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://uk.linkedin.com/in/niamh-henry-b21486206" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.law.ed.ac.uk/people/niamh-henry" target="_blank" rel="noopener">Profile</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span id="year"></span> Niamh Henry &middot; PeaceRep, University of Edinburgh
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
