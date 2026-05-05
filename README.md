@@ -1,37 +1,88 @@
-# Academic Portfolio Website
+# Niamh Henry Website
 
-A clean static one-page portfolio for a research fellow working at the intersection of peace and conflict data, engineering, visualization, and NLP.
+Static portfolio site for `niamhhenry.com`.
 
-## Quick Start
+This site is deployed from GitHub Pages using the repository:
+`https://github.com/niamhhenry/nhen_website`
 
-Open `index.html` in a browser.
+## Project Structure
 
-## Run on Localhost (Recommended)
+- `index.html`: Page structure, section layout, navigation, contact block
+- `styles.css`: Design system, responsive layout, theme styles
+- `script.js`: Portfolio content model (`siteContent`) and card rendering
+- `assets/`: Images (project screenshots + headshot)
+- `CV_CONTENT.md`: CV source content in markdown
+- `CNAME`: Custom domain for GitHub Pages (`niamhhenry.com`)
 
-From the project folder, run:
+## Edit Content
+
+Most text content is in `script.js`.
+
+1. Open `script.js`
+2. Edit entries inside the `siteContent` object (`featured`, `collaborations`, `datasets`, `publications`, `recognition`, `education`, `wip`)
+3. Save and preview locally
+
+Use these fields in each item:
+
+- `meta`: short tag above card title
+- `title`: card title
+- `description`: 1-2 sentence summary
+- `linkLabel`: button/link text
+- `linkUrl`: destination URL
+- `image` (optional): image path like `assets/tracker.png`
+- `secondaryLink` (optional): `{ label: "...", url: "..." }`
+
+## Edit Layout or Styling
+
+- Update page structure and section order in `index.html`
+- Update colors, spacing, typography, and responsive behavior in `styles.css`
+
+## Run Locally
+
+From `c:\Users\nhenry2\website`:
 
 ```powershell
 python -m http.server 5500
 ```
 
-Then open:
+Open `http://localhost:5500`
 
-`http://localhost:5500`
+## Redeploy After Changes
 
-## Theme Toggle
+GitHub Pages redeploys automatically whenever you push to `main`.
 
-- A header toggle switches between light and dark mode.
-- The selected mode is stored in `localStorage`, so visitors keep their preference.
-- If no saved preference exists, the site follows system theme.
+From `c:\Users\nhenry2\website`:
 
-## Easy Updates
+```powershell
+git add .
+git commit -m "Update website content"
+git push
+```
 
-- Main content cards are in `script.js` inside the `siteContent` object.
-- Contact links are in `index.html` under the `#contact` section.
-- Colors and typography are controlled in `styles.css` under `:root`.
+That is all you need for normal updates.
 
-## Suggested Next Edits
+## One-Time GitHub Pages Setup (Already Completed Once)
 
-1. Replace `Your Name` and email in `index.html`.
-2. Replace `#` links in `script.js` with your real project, dataset, and publication URLs.
-3. Optional: add a CV link in the header or contact section.
+If you ever need to reconfigure:
+
+1. GitHub repo -> Settings -> Pages
+2. Source: `Deploy from a branch`
+3. Branch: `main` and folder: `/(root)`
+4. Custom domain: `niamhhenry.com`
+5. Enable `Enforce HTTPS` once certificate is issued
+
+## DNS Records for Domain
+
+At your registrar, ensure these records exist:
+
+- `A` host `@` -> `185.199.108.153`
+- `A` host `@` -> `185.199.109.153`
+- `A` host `@` -> `185.199.110.153`
+- `A` host `@` -> `185.199.111.153`
+- `CNAME` host `www` -> `niamhhenry.github.io`
+
+## Notes
+
+- `CNAME` file must remain in the repo root for custom domain mapping.
+- First publish or DNS changes can take a little time to propagate.
+- If a page looks stale, hard refresh your browser.
